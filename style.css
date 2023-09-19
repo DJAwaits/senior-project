@@ -233,24 +233,3 @@ header {
 .login-register p a:hover {
     text-decoration: underline;
 }
-
-.container {
-    width: 30%;
-    height: 400px;
-    margin: 0 auto;
-    border: 5px solid;
-    display: flex;
-    flex-direction: row;
-}
-
-.item {
-    width: 150px;
-    height: 150px;
-    background-color: #162938;
-    padding: 1em;
-    font-weight: 700;
-    color: var(--clr--light);
-    text-align: center;
-    border: 4px solid;
-    border-radius: 10px;
-}
