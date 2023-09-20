@@ -1,3 +1,18 @@
 <?php
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
+    //Database Connection
+    $conn  = new mysqli('localhost', 'root','', 'senror_project');
+    if($conn->connection_error){
+        die('Connection Failed : '.$conn->connec_error);
+    }else{
+        $stmt = $conn->prepare("insert into users(username, email, password) values(?, ?, ?)");
+        $stmt->bind_param("sss", $username, $email, $password);
+        $stmt->execute();
+        echo "registration successfully...";
+        stmt->close();
+        $conn->close();
+    }
 ?>
