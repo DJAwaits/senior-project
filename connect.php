@@ -5,14 +5,14 @@
 
     //Database Connection
     $conn  = new mysqli('localhost', 'root','', 'senror_project');
-    if($conn->connection_error){
-        die('Connection Failed : '.$conn->connec_error);
+    if($conn->connect_error){
+        die('Connection Failed : '.$conn->connect_error);
     }else{
         $stmt = $conn->prepare("insert into users(username, email, password) values(?, ?, ?)");
         $stmt->bind_param("sss", $username, $email, $password);
         $stmt->execute();
         echo "registration successfully...";
-        stmt->close();
+        $stmt->close();
         $conn->close();
     }
 ?>
