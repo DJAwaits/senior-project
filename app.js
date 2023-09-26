@@ -5,15 +5,17 @@ import {getUsers, getUser, createUser} from './database.js'
 const app = express()
 app.use(express.json())
 
-app.get('/users:id', async (req,res) => {
-  const id = req.params.id
-  const users = await getUser(id)
-  res.send(users)
-})
+//app.get('/', async (req,res) => {
+  //const id = req.params.id
+  //const users = await getUser(id)
+  //res.send(users)
+//})
 
-app.post('/index.html', async (req,res) => {
+app.post('/index.html#', async (req,res) => {
   
-  const user = createUser(`${req.body.username},${req.body.password}, ${req.body.email}`)
+  const user = createUser(`${req.body.username},${req.body.password},${req.body.email}`)
+  //const user = createUser('josgsrg,wregwerg,wgwrg@grwsg')
+  
   res.send(user)
 })
 
@@ -24,6 +26,6 @@ app.use((err, req, res, next) => {
   })
 
 
-  app.listen(8080, () => {
-    console.log('Server is running on port 8080')
-  })
+  //app.listen(3306, () => {
+    //console.log('Server is running on port 3306')
+  //})

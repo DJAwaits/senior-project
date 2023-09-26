@@ -24,6 +24,7 @@ export async function getUser(id) {
     return rows[0]
 }
 
-
+//const users = await getUsers();
+//onsole.log(users)
 
 
