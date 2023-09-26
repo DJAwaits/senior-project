@@ -1,5 +1,4 @@
 .container{
-<<<<<<< Updated upstream
     background-color:rosybrown;
     width:65%;
     height:700px;
@@ -9,35 +8,9 @@
     background-color: rgb(93, 82, 191);
     border-bottom:5px solid lightcyan;
     padding-left: 5px;
-=======
-    background-color:rgb(159, 173, 181);
-    width:65%;
-    height:700px;
-    border-radius: 20px;
-}
-.media-title{
-    background-color: rgb(118, 127, 133);
-    padding-left: 25px;
-    border-radius: 20px;
-}
-.content-container{
-    display: flex;
->>>>>>> Stashed changes
 }
 .image-container{
     background-color: black;
     width: 20%;
     height: 300px;
-<<<<<<< Updated upstream
 }
-=======
-    margin: 15px;
-}
-.description-container{
-    width:70%;
-    margin-top: 15px;
-    padding-top: 20px;
-    padding-left: 10px;
-    border-left: 2px solid black;
-}
->>>>>>> Stashed changes
