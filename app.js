@@ -11,12 +11,12 @@ app.use(express.json())
   //res.send(users)
 //})
 
-app.post('/index.html#', async (req,res) => {
+app.get('/index.html#', async (req,res) => {
   
   const user = createUser(`${req.body.username},${req.body.password},${req.body.email}`)
   //const user = createUser('josgsrg,wregwerg,wgwrg@grwsg')
   
-  res.send(user)
+  
 })
 
 
