@@ -11,9 +11,9 @@ app.use(express.json())
   //res.send(users)
 //})
 
-app.get('/index.html#', async (req,res) => {
+app.get('register.html', async (req,res) => {
   
-  const user = createUser(`${req.body.username},${req.body.password},${req.body.email}`)
+  const user = await createUser(`${req.body.username},${req.body.password},${req.body.email}`)
   //const user = createUser('josgsrg,wregwerg,wgwrg@grwsg')
   
   
