@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "C:\\Users\\r66d\\Documents\\GitHub\\senior-project\\home.html",
+            "file": "C:\\Users\\ejy3\\Documents\\GitHub\\senior-project\\home.html",
             "url": "http://localhost:3306",
         }
     ]
