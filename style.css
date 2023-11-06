@@ -246,15 +246,3 @@ header {
     display:flex;
     justify-content: space-around;
 }
-.select {
-    background: #2a2f3b;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px #2a2f3b solid;
-    border-radius: 0.5em;
-    padding: 1em;
-    cursor: pointer;
-    transition: background 0.3s;
-}
