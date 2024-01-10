@@ -173,7 +173,7 @@ a {
 
 .title {
     font-size: 30px;
-    color: RGB(75, 110, 96);
+    color: navy ;
     background-color: RGB(221, 186, 182);
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -193,6 +193,8 @@ a {
     height: 80%;
     background-color: rgb(150, 144, 135);
     border-radius: 1rem;
+    border: 4px solid burlywood;
+    color: aliceblue;
 }
 
 .popular-container {
@@ -201,6 +203,8 @@ a {
     height: 80%;
     background-color: rgb(150, 144, 135);
     border-radius: 1rem;
+    border: 4px solid burlywood;
+    color: aliceblue;
 }
 
 .top-rated-container {
@@ -209,6 +213,8 @@ a {
     height: 80%;
     background-color: rgb(150, 144, 135);
     border-radius: 1rem;
+    border: 4px solid burlywood;
+    color: aliceblue;
 }
 
 /*.slidershow {
