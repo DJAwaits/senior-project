@@ -9,7 +9,6 @@
     background: bisque;
     width: 100%;
     height: 100%;
-    overflow-y: auto;
 }
 
 .nav-container {
@@ -152,14 +151,14 @@ a {
     background: antiquewhite;
     margin: auto;
     width: 80%;
-    height: 100%;
+    height: 85%;
     border-radius: 1rem;
     text-align: center;
     justify-content: center;
     border-style: solid;
     border-color:burlywood;
     border-width: 4px;
-    
+    overflow-y: auto;
 }
 
 .title-container {
@@ -184,15 +183,16 @@ a {
 
 .featured-container {
     width: 100%;
-    height: 100%;
+    height: 25rem;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 4rem;
 }
 
 .new-releases-container {
     margin: 1.5rem;
     width: 22rem;
-    height: 40rem;
+    height: 100%;
     background-color: rgb(150, 144, 135);
     border-radius: 1rem;
     border: 4px solid burlywood;
@@ -202,7 +202,7 @@ a {
 .popular-container {
     margin: 1.5rem;
     width: 22rem;
-    height: 40rem;
+    height: 100%;
     background-color: rgb(150, 144, 135);
     border-radius: 1rem;
     border: 4px solid burlywood;
@@ -212,9 +212,31 @@ a {
 .top-rated-container {
     margin: 1.5rem;
     width: 22rem;
-    height: 40rem;
+    height: 100%;
     background-color: rgb(150, 144, 135);
     border-radius: 1rem;
     border: 4px solid burlywood;
     color: aliceblue;
+}
+
+.suggestions-container {
+    width: 100%;
+    height: 25rem;
+}
+.suggestions {
+    margin: 1.5rem;
+    width: 80%;
+    height: 25rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.suggestion {
+    margin: 1.5rem;
+    width: 25rem;
+    height: 10rem;
+    background-color:rgb(219, 90, 81);
 }
