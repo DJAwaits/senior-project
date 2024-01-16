@@ -183,7 +183,7 @@ a {
 
 .featured-container {
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     display: flex;
     justify-content: space-around;
     margin-bottom: 4rem;
@@ -196,7 +196,7 @@ a {
     background-color: rgb(150, 144, 135);
     border-radius: 1rem;
     border: 4px solid burlywood;
-    color: rgb(219, 90, 81);
+    color: aliceblue;
 }
 
 .popular-container {
@@ -224,19 +224,20 @@ a {
     height: 25rem;
 }
 .suggestions {
-    margin: 1.5rem;
     width: 80%;
-    height: 25rem;
-    background-color: aqua;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 3rem;
 
 }
 
 .suggestion {
-    margin: 1.5rem;
-    width: 25rem;
-    height: 10rem;
+    margin: 2rem;
+    width: 20rem;
+    height: 30rem;
     background-color:rgb(219, 90, 81);
 }
