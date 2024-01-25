@@ -181,63 +181,21 @@ a {
     border-radius: 0.75rem;
 }
 
-.featured-container {
+.book-container {
     width: 100%;
     height: 30rem;
     display: flex;
-    justify-content: space-around;
     margin-bottom: 4rem;
-}
+}   
 
-.new-releases-container {
-    margin: 1.5rem;
-    width: 22rem;
+.cover-container {
+    margin: 1rem;
+    width: 20%;
     height: 100%;
-    background-color: rgb(150, 144, 135);
-    border-radius: 1rem;
-    border: 4px solid burlywood;
-    color: aliceblue;
 }
 
-.popular-container {
-    margin: 1.5rem;
-    width: 22rem;
-    height: 100%;
-    background-color: rgb(150, 144, 135);
-    border-radius: 1rem;
-    border: 4px solid burlywood;
-    color: aliceblue;
-}
-
-.top-rated-container {
-    margin: 1.5rem;
-    width: 22rem;
-    height: 100%;
-    background-color: rgb(150, 144, 135);
-    border-radius: 1rem;
-    border: 4px solid burlywood;
-    color: aliceblue;
-}
-
-.suggestions-container {
-    width: 100%;
-    height: 25rem;
-}
-.suggestions {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 10px;
-    margin-bottom: 3rem;
-
-}
-
-.suggestion {
-    margin: 2rem;
-    width: 20rem;
-    height: 30rem;
-    background-color:rgb(219, 90, 81);
+.synopsis-container {
+    margin: 1rem;
+    width: 60%;
+    height: 60%;
 }

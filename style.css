@@ -1,248 +1,243 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('https://wallpaper.dog/large/20516068.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-header {
+.container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-}
 
-.logo {
-    font-size: 2em;
-    color: #fff;
-    user-select: none;
-}
-
-.navigation .navbtn {
-    position: relative;
-    font-size: 1.1em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
-
-.navigation .navbtn::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-
-.navigation .navbtn:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
-.navigation .btnLogin-popup {
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
-}
-
-.navigation .btnLogin-popup:hover {
-    background: #fff;
-    color: #162938;
-}
-
-.wrapper {
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: transform .5s ease, height .2s ease;
-}
-
-
-.wrapper.active {
-    height: 520px;
-}
-
-.wrapper .form-box {
-    width: 100%;
-    padding: 40px;
-}
-
-.wrapper .form-box.login {
-    transition: transform .18s ease;
-    transform: translateX(0);
-}
-
-.wrapper.active .form-box.login {
-    transition: none;
-    transform: translateX(-400px);
-}
-
-.wrapper .form-box.register {
-    position: absolute;
-    transition: none;
-    transform: translateX(400px)
-}
-
-.wrapper.active .form-box.register {
-    transition: transform .18s ease;
-    transform: translateX(0);
-}
-
-.form-box h2 {
-    font-size: 2em;
-    color: #162938;
-    text-align: center;
-}
-
-.input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #162938;
-    margin: 30px 0;
-}
-
-.input-box label {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: -5px;
-}
-
-.input-box input {
+    background: bisque;
     width: 100%;
     height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #162938;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
 }
 
-.input-box .icon {
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    color: #162938;
-    line-height: 57px;
-}
-
-.remember-forgot {
-    font-size: .9em;
-    color: #162938;
-    font-weight: 500;
-    margin: -15px 0 15px;
+.nav-container {
     display: flex;
-    justify-content: space-between;
+    font-size: 18px;
+    margin: 1rem;
 }
 
-.remember-forgot label input {
-    accent-color: #162938;
-    margin-right: 3px;
+.navbar {
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.remember-forgot a {
-    color: #162938;
-    text-decoration: none;
+.nav-links {
+    display: flex;
+    gap: 2rem;
 }
 
-.remember-forgot a:hover {
-    text-decoration: underline;
-}
-
-.btn {
-    width: 100%;
-    height: 45px;
-    background: #162938;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #fff;
-    font-weight: 500;
-}
-
-.login-register {
-    font-size: .9em;
-    color: #162938;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px 
-}
-
-.login-register p a {
-    color: #162938;
-    text-decoration: none;
+.nav-link, .drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
-.login-register p a:hover {
-    text-decoration: underline;
+a {
+    text-decoration: none;
+    color: currentColor;
 }
-.container{
-    background-color:rgb(84, 101, 128);
-    width:65%;
-    height:700px;
-    border: 5px solid rgb(48, 58, 74);
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background: antiquewhite;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display:none;
 }
-.container-nav{
+
+.nav-link:hover {
+    background-color: black;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.films:hover .drop-down {
+    display:block;
+}
+
+.films a {
+    display: flex;
+}
+
+.films .dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.films:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+    background: black;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.animation:hover .drop-down {
+    display:block;
+}
+
+.animation a {
+    display: flex;
+}
+
+.animation .dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.animation:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.graphic-novels:hover .drop-down {
+    display:block;
+}
+
+.graphic-novels a {
+    display: flex;
+}
+
+.graphic-novels .dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.graphic-novels:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.login-link {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: RGB(221, 186, 182);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.login-link:hover {
+    background-color: black;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.landing-container {
+    background: antiquewhite;
+    margin: auto;
+    width: 80%;
+    height: 85%;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    border-color:burlywood;
+    border-width: 4px;
+    overflow-y: auto;
+}
+
+.title-container {
+    margin: 1rem;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rosybrown;
+    border-radius: 1rem;
+}
+
+.title {
+    font-size: 30px;
+    color: rgb(219, 90, 81);
+    background-color: RGB(221, 186, 182);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.75rem;
+}
+
+.featured-container {
     width: 100%;
-    background-color: rgb(52, 83, 133);
-    border-bottom: 3px solid rgb(48, 58, 74);
-    padding-left: 5px;
-    color:azure;
-    display:flex;
+    height: 30rem;
+    display: flex;
     justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.new-releases-container {
+    margin: 1.5rem;
+    width: 22rem;
+    height: 100%;
+    background-color: rgb(150, 144, 135);
+    border-radius: 1rem;
+    border: 4px solid burlywood;
+    color: aliceblue;
+}
+
+.popular-container {
+    margin: 1.5rem;
+    width: 22rem;
+    height: 100%;
+    background-color: rgb(150, 144, 135);
+    border-radius: 1rem;
+    border: 4px solid burlywood;
+    color: aliceblue;
+}
+
+.top-rated-container {
+    margin: 1.5rem;
+    width: 22rem;
+    height: 100%;
+    background-color: rgb(150, 144, 135);
+    border-radius: 1rem;
+    border: 4px solid burlywood;
+    color: aliceblue;
+}
+
+.suggestions-container {
+    width: 100%;
+    height: 25rem;
+}
+.suggestions {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 3rem;
+
+}
+
+.suggestion {
+    margin: 2rem;
+    width: 20rem;
+    height: 30rem;
+    background-color:rgb(219, 90, 81);
 }
