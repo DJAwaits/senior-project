@@ -224,9 +224,18 @@ a {
 
 .synopsis-container {
     margin: 2rem;
-    width: 60%;
-    height: 60%;
+    width: 75%;
+    height: 72%;
     font-size: 20px;
-    padding-top: 2rem;
-    padding-left: 5rem;
+    border-width: 3px;
+    border-style: solid;
+    border-color: burlywood;
+    border-radius: 1rem;
+    text-align: left;
+    background-color: bisque;
+}
+
+.synopsis-text {
+    padding: 1rem;
+    margin: 0;
 }
