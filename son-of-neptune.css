@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: fixed;
+
+    background: bisque;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container {
+    display: flex;
+    font-size: 18px;
+    margin: 1rem;
+}
+
+.navbar {
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link, .drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background: antiquewhite;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display:none;
+}
+
+.nav-link:hover {
+    background-color: black;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.films:hover .drop-down {
+    display:block;
+}
+
+.films a {
+    display: flex;
+}
+
+.films .dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.films:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+    background: black;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.animation:hover .drop-down {
+    display:block;
+}
+
+.animation a {
+    display: flex;
+}
+
+.animation .dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.animation:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.graphic-novels:hover .drop-down {
+    display:block;
+}
+
+.graphic-novels a {
+    display: flex;
+}
+
+.graphic-novels .dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.graphic-novels:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.login-link {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: RGB(221, 186, 182);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.login-link:hover {
+    background-color: black;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.landing-container {
+    background: antiquewhite;
+    margin: auto;
+    width: 80%;
+    height: 85%;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    border-color:burlywood;
+    border-width: 4px;
+    overflow-y: auto;
+}
+
+.title-container {
+    margin: 1rem;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rosybrown;
+    border-radius: 1rem;
+}
+
+.title {
+    font-size: 30px;
+    color: rgb(219, 90, 81);
+    background-color: RGB(221, 186, 182);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.75rem;
+}
+
+.book-container {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    margin-bottom: 4rem;
+}   
+
+.left-box {
+    width: 20%;
+    height: 100%;
+}
+
+.cover-container {
+    margin: 1rem;
+    width: 100%;
+    height: 75%;
+}
+
+.info-container {
+    width: 100%;
+    height: 25%;
+    background-color: bisque;
+    margin: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    border-color: burlywood;
+    border-radius: 1rem;
+    justify-content: space-around;
+    text-align: left;
+    position: relative;
+}
+
+.info-text {
+    padding-left: 0.5rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+    font-weight: bold;
+}
+
+.synopsis-container {
+    margin: 2rem;
+    width: 75%;
+    height: 72%;
+    font-size: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: burlywood;
+    border-radius: 1rem;
+    text-align: left;
+    background-color: bisque;
+}
+
+.synopsis-text {
+    padding: 1rem;
+    margin: 0;
+}
